@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 
 import Form from "./components/Form";
-import Weather from "./components/Weather";
+import WeatherInfo from "./components/Weather";
 
 import "./styles.css";
 
@@ -64,7 +64,7 @@ class WeatherApp extends React.Component {
         <img src="img/undraw_dreamer.svg" className="headerImg" alt="" />
         <Form getWeather={this.getWeather} />
 
-        <Weather
+        <WeatherInfo
           city={state.city}
           region={state.region}
           country={state.country}
