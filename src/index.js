@@ -28,9 +28,9 @@ class WeatherApp extends React.Component {
 
   getWeather = async e => {
     e.preventDefault();
-    const city = e.target.elements.city.value;
+    const query = e.target.elements.query.value;
     const api_call = await axios.get(
-      `https://api.apixu.com/v1/forecast.json?key=${API_KEY}&q=${city}`
+      `https://api.apixu.com/v1/forecast.json?key=${API_KEY}&q=${query}`
     );
     const response = await api_call;
     const data = response.data;

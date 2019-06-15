@@ -51,27 +51,27 @@ body {
 }
 
 input {
-  padding: 8px;
-  /* border: 1px solid #f4f4f6; */
-  border: 2px solid #33aacc;
+  font-size: 1rem;
+  padding: 7px;
+  border: 3px solid #3d7371;
 }
 
 input:focus {
-  border: 2px solid #0c8394;
+  border: 3px solid #36CD9B;
 }
 
 button {
+  font-size: 1rem;
   padding: 10px;
-  background-color: #3acce1;
+  background-color: #3d7371;
   border: none;
   color: #f8feff;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   transition: background-color 0.5s ease-in-out;
 }
 
 button:hover {
-  background-color: #0c8394;
+  background-color: #36CD9B;
 }
 
 p {
