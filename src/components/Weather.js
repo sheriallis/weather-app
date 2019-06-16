@@ -1,43 +1,45 @@
 import React from "react";
 
 function WeatherInfo(props){
+  const {city, icon, temp, country, feelslike_c, condition, forecast, wind_kmh, humidity, sunrise, sunset} = props;
+
   return (
     <div className="Wrapper">
-      {props.city && (
+      {city && (
         <div className="mainWeatherInfo">
-          <img src={`${props.icon}`} alt="" />
-          <p className="temp">{props.temp}°C</p>
-          <p className="city">{props.city}</p>
-          <p className="country">{props.country}</p>
+          <img src={`${icon}`} alt="" />
+          <p className="temp">{temp}°C</p>
+          <p className="city">{city}</p>
+          <p className="country">{country}</p>
         </div>
       )}
 
-      {props.city && (
+      {city && (
         <div className="additionalInfo">
           <p>
-            <span>Feels like:</span> {props.feelslike_c}
+            <span>Feels like:</span> {feelslike_c}
           </p>
 
           <p>
-            <span>Condition:</span> {props.condition}
+            <span>Condition:</span> {condition}
           </p>
 
           <p>
-            <span>Forecast:</span> {props.forecast}
+            <span>Forecast:</span> {forecast}
           </p>
           <p>
-            <span>Wind (km/h):</span> {props.wind_kmh}
+            <span>Wind (km/h):</span> {wind_kmh}
           </p>
           <p>
-            <span>Humidity:</span> {props.humidity}
-          </p>
-
-          <p>
-            <span>Sunrise:</span> {props.sunrise}
+            <span>Humidity:</span> {humidity}
           </p>
 
           <p>
-            <span>Sunrise:</span> {props.sunset}
+            <span>Sunrise:</span> {sunrise}
+          </p>
+
+          <p>
+            <span>Sunrise:</span> {sunset}
           </p>
         </div>
       )}

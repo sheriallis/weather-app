@@ -52,10 +52,6 @@ class WeatherApp extends React.Component {
 
   };
 
-  componentDidMount() {
-    this.getWeather();
-  }
-
   render() {
     const state = this.state;
 
